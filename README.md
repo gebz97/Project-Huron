@@ -19,9 +19,9 @@ Everything here assumes a **self-hosted, on-premise or private-cloud** context. 
 ```
 huron/
 ├── storage/                    # Storage layer — object stores, HDFS, and file formats
-│   ├── minio/
-│   ├── hdfs/
+│   ├── garage/
 │   ├── ceph/
+│   ├── hdfs/
 │   └── formats/                # Parquet, ORC, Iceberg, Delta Lake, Hudi guides
 │
 ├── metastore/                  # Metadata and catalog layer
@@ -55,25 +55,28 @@ huron/
 │   ├── apache-ranger/
 │   └── openmetadata/
 │
-├── monitoring/                 # Observability, metrics, and alerting
+├── operations/                 # Observability, runbooks, DR, and maintenance
 │   ├── prometheus/
 │   ├── grafana/
-│   └── opensearch/
+│   ├── elasticsearch/
+│   ├── solr/
+│   ├── runbooks/
+│   └── disaster-recovery/
+│
+├── visualization/              # BI and data exploration tooling
+│   ├── superset/
+│   ├── kibana/
+│   └── redash/
 │
 ├── ansible/                    # Ansible roles and playbooks for the full stack
 │   ├── roles/
 │   ├── inventories/
 │   └── playbooks/
 │
-├── architecture/               # Reference architectures, diagrams, and ADRs
-│   ├── diagrams/
-│   ├── adr/                    # Architecture Decision Records
-│   └── patterns/
-│
-└── docs/                       # General documentation and getting started guides
-    ├── getting-started.md
-    ├── glossary.md
-    └── contributing.md
+└── architecture/               # Reference architectures, diagrams, and ADRs
+    ├── diagrams/
+    ├── adr/                    # Architecture Decision Records
+    └── patterns/
 ```
 
 ---
