@@ -132,7 +132,7 @@ Reference architectures for common data lake topologies, Architecture Decision R
 
 Requirements vary by domain, but generally you'll want:
 
-- Linux hosts (RHEL/Rocky/Ubuntu LTS supported)
+- Linux hosts (RHEL/Rocky/Alma/Oracle Linux)
 - Ansible 2.14+ on your control node
 - Python 3.9+ on managed nodes
 - SSH access and sudo privileges on target hosts
